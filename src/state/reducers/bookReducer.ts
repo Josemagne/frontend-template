@@ -30,10 +30,10 @@ const initialState: State = {
 
 const bookReducer = (state = initialState, action: Action) => {
     switch (action.type) {
-        case BookActionTypes.GET_BOOK: {
-            return state.books.find((book) => { return book.book_id === action.payload })
+        case BookActionTypes.ADD_BOOK: {
+            state.books.push(action.payload);
         }
-        case BookActionTypes.GET_BOOKS: {
+        case BookActionTypes.ALTER_BOOK: {
             // return all books
             return state.books;
         }
