@@ -75,6 +75,14 @@ const config = {
       filename: "index.html",
       inject: "body",
     }),
+    [
+          "@babel/plugin-transform-runtime", {
+          "absoluteRuntime": false,
+          "corejs": false,            
+          "helpers": true,                                  
+          "regenerator": true,                         
+          "useESModules": true,                             
+        }],
   ],
   devServer: {
     historyApiFallback: true,

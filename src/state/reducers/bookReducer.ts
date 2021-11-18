@@ -1,15 +1,7 @@
 import { BookActionTypes } from "../action-types";
 import { Action } from "../actions";
 
-// Defines what props a book must have
-interface Book {
-    title: string;
-    // Sometimes the author name is unknown
-    author_name?: string | undefined | null;
-    author_prename?: string | undefined | null;
-    // Each book must have an id
-    book_id: number;
-}
+
 
 // Restricts how the state must be
 interface State {
