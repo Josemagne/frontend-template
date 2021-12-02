@@ -74,7 +74,7 @@ const config = {
       template: resolve(__dirname, "/public", "index.html"),
       filename: "index.html",
       inject: "body",
-    }),
+    }),],
 
   devServer: {
     historyApiFallback: true,
