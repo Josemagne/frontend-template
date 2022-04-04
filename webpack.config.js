@@ -1,7 +1,6 @@
 const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
-const webpack = require("webpack");
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -74,7 +73,8 @@ const config = {
       template: resolve(__dirname, "/public", "index.html"),
       filename: "index.html",
       inject: "body",
-    }),],
+    }),
+  ],
 
   devServer: {
     historyApiFallback: true,
